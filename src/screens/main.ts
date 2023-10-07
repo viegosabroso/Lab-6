@@ -6,10 +6,7 @@ import { VariableAppAtate } from "../store/store";
 import { oneobserver } from "../store/store";
 import { attributees } from "../components/cards/cards";
 
-
-
 export class Main extends HTMLElement{
-   
     constructor(){
         super();
         this.attachShadow({mode: "open"});   

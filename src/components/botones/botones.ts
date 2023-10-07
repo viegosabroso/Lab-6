@@ -5,12 +5,10 @@ import { dispatch, oneobserver } from "../../store/store";
 import botonescss from "./botones.css"
 import { VariableAppAtate } from "../../store/store";
 
-
 export enum attributes {
     "head" = "head",
     "body" = "body",
     "feet" = "feet"
-
 }
    
 export class buttons extends HTMLElement{
@@ -29,8 +27,6 @@ export class buttons extends HTMLElement{
         this.mount()
 
     }
-    
-    
     static get observedAttributes(){
         const attrs: Record<attributes, null> = {
             head: null,
@@ -59,8 +55,6 @@ export class buttons extends HTMLElement{
             dispatch(CHANGEFEETt(this.feet))})
     }
 
-    
-
     render(){
     if(this.shadowRoot){
         this.shadowRoot.innerHTML = `
@@ -70,8 +64,7 @@ export class buttons extends HTMLElement{
         <img src="${this.body}" class="btn2" width="100px" height="100px">
         <img src="${this.feet}" class="btn3" width="100px" height="100px">
         </div>`
-    }   
-    }
+    }}
 }
 
 customElements.define("my-buttons",buttons)

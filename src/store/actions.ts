@@ -6,8 +6,6 @@ export const CHANGEHEADd = (payload: any) => {
         actions: actions.CHANGEHEAD,
         payload,
     }
-
-
 }
 export const CHANGEBODYy = (payload: any) => {
 
@@ -15,8 +13,6 @@ export const CHANGEBODYy = (payload: any) => {
         actions: actions.CHANGEBODY,
         payload,
     }
-
-
 }
 export const CHANGEFEETt = (payload: any) => {
 
@@ -24,7 +20,5 @@ export const CHANGEFEETt = (payload: any) => {
         actions: actions.CHANGEFEET,
         payload,
     }
-
-
 }
 
